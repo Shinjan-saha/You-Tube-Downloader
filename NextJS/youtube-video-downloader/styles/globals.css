@@ -1,0 +1,41 @@
+/* global.css */
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables for foreground and background colors */
+:root {
+  --foreground-rgb: 0, 0, 0; /* Default foreground color (black) */
+  --background-start-rgb: 214, 219, 220; /* Default background start color */
+  --background-end-rgb: 255, 255, 255; /* Default background end color */
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* Foreground color for dark mode (white) */
+    --background-start-rgb: 0, 0, 0; /* Background start color for dark mode (black) */
+    --background-end-rgb: 0, 0, 0; /* Background end color for dark mode (black) */
+  }
+}
+
+/* Body styles */
+body {
+  color: rgb(var(--foreground-rgb)); /* Set text color based on root variable */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb)) /* End color of gradient */
+    )
+    rgb(var(--background-start-rgb)), /* Start color of gradient */
+    url('/background-image.jpg') center/cover no-repeat; /* Background image */
+}
+
+/* Utility class */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Example utility class for text wrapping */
+  }
+}
