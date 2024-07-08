@@ -16,7 +16,7 @@ Use ctrl+shift+v to paste the URL in the CLI
 
 <img width ="1000" height="200" src="./img/pythoncli.png">
 
-<b>The Videos are stored in the Downloaded_Video after the succesfull completion of the 
+<b>The Videos are stored in the Downloaded_Video after the succesfull completion of the Download Process
 
 ## How to Use NextJS Applictation:-
 
